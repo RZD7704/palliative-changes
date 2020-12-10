@@ -7,7 +7,7 @@
 }
 
 .general-title {
-    font-weight: 600;
+    font-weight: normal;
     font-size: 18px;
     letter-spacing: 0.03em;
     color: #034257;
@@ -18,10 +18,13 @@
 }
 
 .general-subtitle {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 16px;
     color: #034257;
-    padding-bottom: 20px;
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
 }
 
 .general-subtitle_pt_25 {
@@ -121,4 +124,22 @@
 
 .tabs-content>div.act {
     display: block;
+}
+
+.tooltip-smart {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    position: absolute;
+    z-index: 99999;
+    font-size: 14px;
+}
+
+.chart-smart {
+    &__circle {
+        animation: circle-chart-fill 2s reverse;
+        transform: rotate(-90deg);
+        transform-origin: center;
+    }
 }

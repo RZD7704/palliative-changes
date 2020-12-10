@@ -252,8 +252,10 @@
     }
 
     &__title {
-        font-size: 12px;
+        font-weight: 500;
+        font-size: 16px;
         line-height: 16px;
+        letter-spacing: 0.03em;
         color: #034257;
         padding-bottom: 20px;
     }
@@ -302,7 +304,7 @@
     }
 
     &__subtitle {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 14px;
         color: #656E71;
     }
