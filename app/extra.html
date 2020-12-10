@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <section class="section-explenation">
+                <div class="container">
+                    <div class="general-head">
+                        <h2 class="general-title">Потреба і надана допомога</h2>
+                        <a class="general-link" href="index.html">
+                            <svg class="general-link__icon">
+                                <use xlink:href="img/sprite.svg#arr-link-main"></use>
+                            </svg>
+                            На головну</a>
+                    </div>
+                    <div data-aos="fade-right" class="tab-container">
+                        <ul class="general-tabs nav" id="myTab" role="tablist">
+                            <li class="general-tabs__item" role="presentation">
+                                <a class="general-tabs__link active" id="adults" data-toggle="tab"
+                                    href="#adults-content" role="tab" aria-controls="adults-content"
+                                    aria-selected="false">дорослі</a>
+                            </li>
+                            <li class="general-tabs__item" role="presentation">
+                                <a class="general-tabs__link" id="children" data-toggle="tab" href="#children-content"
+                                    role="tab" aria-controls="children-content" aria-selected="true">діти</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="adults-content" role="tabpanel"
+                                aria-labelledby="adults">
+                                <div class="methodology-content">
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Новоутворення</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Померлі від новоутворень(онкологія), дорослі ( у т.ч. від
+                                                    доброякісних новоутворень)</p>
+                                                <p class="methodology-content__txt">Вперше зареєстровані випадки
+                                                    дорослих, хворих на злоякісні новоутворення за винятком немеланомних
+                                                    злоякісних новоутворень шкіри у минулому році</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Держстат, причини смерті</p>
+                                                <p class="methodology-content__txt">Національний-канцер реєстр</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Серцево-судинні захворювання</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від сердцево-судинних захворювань
+                                                    (за винятком причини смерті)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Демеції</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість хворих з деменцією, яким надавалась амбулаторна
+                                                    психіатрична допомога</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    Табл. 1000
+                                                    форми №10
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Ревматоїдний артрит</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано хворих із стаціонару з ревматоїдним артритом, дорослі
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    Табл. 3220
+                                                    форми №20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Цукровий діабет</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Померлі від цукрового діабету, дорослі</p>
+                                                <p class="methodology-content__txt">
+                                                    Виписано дорослих хворих із стаціонару з цукровим діабетом</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Медстат,
+                                                    Табл. 3220
+                                                    форми №20
+                                                </p>
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Туберкульоз</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Померлі від туберкульозу у минулому році, серед дорослого населення
+                                                </p>
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Дорослі хворі на туберкульоз, яким призначено паліативне лікування
+                                                    (у позаминулому році)
+                                                </p>
+                                                <p class="methodology-content__txt">
+                                                    Дорослі хворі на мультирезистентну форму туберкульозу (виявлені у
+                                                    позаминулому році)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Держстат,
+                                                    причини смерті
+                                                </p>
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">ТБ -
+                                                    реєстратор
+                                                </p>
+                                                <p class="methodology-content__txt">ТБ - реєстратор
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">ВІЛ/СНІД</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від ВІЛ/СНІД серед дорослого населення</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Фіброз та цироз печінки</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від фіброзу та цирозу печінки, дорослі
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Захворювання нирок</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від захворювань нирок, дорослі</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Хронічне обструктивне захворювання
+                                                    легень</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від хронічних обструктивних захворювань легень, дорослі
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="children-content" role="tabpanel" aria-labelledby="children">
+                                <div class="methodology-content">
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Перинатальні стани</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Виписано дітей, з окремими станами, що виникають у перинатальному
+                                                    періоді, із стаціонару </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_desc">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Вроджені вади розвитку</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано дітей з вродженими вадами розвитку та стаціонару
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Новоутворення</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано дітей, хворих на злоякісні новоутворення, із стаціонару</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Серцево – судинні захворювання</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано дітей, хворих на серцево-судинні захворювання, із
+                                                    стаціонару
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Хронічні гепатити</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Виписано дітей, хворих на хронічні гепатити, із стаціонару</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Загальні хвороби ЦНС</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано із стаціонару дітей із запальними хворобам ЦНС
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt methodology-content__txt_pb_20">
+                                                    Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Туберкульоз</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Виписано дітей, хворих на туберкульоз, із стаціонару</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 3220
+                                                    форма № 20
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Розумова відсталість
+                                                    (важка і глибока)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей з важкою та глибокою розумовою відсталістю, яким
+                                                    надавалась амбулаторна психіатрична допомога на кінець року
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 2100
+                                                    форма № 10
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Дитячий церебральний пароаліч</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з церебральним паралічем </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Хронічне обструктивне захворювання
+                                                    легень</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від хронічних обструктивних захворювань легень, дорослі
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Дитячий церебральний пароаліч</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з церебральним паралічем </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Хронічне обструктивне захворювання
+                                                    легень</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Померлі від хронічних обструктивних захворювань легень, дорослі
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Держстат,
+                                                    причини смерті
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Дитячий церебральний пароаліч</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з церебральним паралічем </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Цукровий діабет</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з цукровим діабетом
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Фенілкетонурія</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з фенілкетонурією</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">ВІЛ/СНІД</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів ВІЛ/СНІД
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Муковізцидоз</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з муковізцидозом</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="methodology-content__item methodology-content__item_theme_green">
+                                        <div class="methodology-disease">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Захворювання</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Мукополісахаридозом</p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-source">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Джерело</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">
+                                                    Кількість дітей-інвалідів з мукополісахаридозом
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="methodology-indicator">
+                                            <div class="methodology-head methodology-head_mob">
+                                                <h2 class="methodology-head__headline">Показник</h2>
+                                            </div>
+                                            <div class="methodology-content">
+                                                <p class="methodology-content__txt">Медстат,
+                                                    табл. 0800
+                                                    форма № 19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="total" class="section-total">
+                <div class="container">
+                    <div class="general-head">
+                        <h2 class="general-title">Насамкінець</h2>
+                    </div>
+                    <div data-aos="zoom-out-down" class="hidden-block">
+                        <div class="hidden-block__wrapper">
+                            <div class="hidden-block__item">
+                                <p class="hidden-block__txt">
+                                    Методологія оцінки потреби в паліативній допомозі має постійно уточнюватися і
+                                    модифікуватися, щоб враховувати нові дані (які почали збирати) або зниклі дані, які
+                                    не фіксувалися і не збиралися з точки зору паліативної допомоги. Ця оцінка дозволяє
+                                    приблизно оцінити, скільки пацієнтів з певними захворюваннями на певній території
+                                    потребують паліативної допомоги.
+                                </p>
+                            </div>
+                            <div class="hidden-block__item">
+                                <p class="hidden-block__txt">
+                                    Тільки масова належна оцінка станів важкохворих пацієнтів - з використання
+                                    міжнародно визнаних та поширених у міжнародно визнаних та поширених у світовій
+                                    практиці шкал та інструментів (оцінки стану пацієнта в .ч. болю, фіксації різних
+                                    важких симптомів, їх прогресування) попацієнтний електронний облік та подальша
+                                    ґрунтовна аналітична робота з цими великими даними, допоможуть точніше розуміти
+                                    скільки пацієнтів, з якими захворюваннями, якими станами і симптомами, дійсно
+                                    потребують паліативної допомоги в Україні.
+                                </p>
+                            </div>
+                            <div class="hidden-block__item">
+                                <p class="hidden-block__txt">
+                                    З іншого боку, потрібно пам’ятати, що надані (лікарнями) дані щодо наданої
+                                    паліативної допомоги , показують лише кількість пацієнтів, і не показують дані щодо
+                                    якості надання паліативної допомоги, наскільки повно були задоволені потреби
+                                    пацієнтів, у паліативній допомозі. Такі дані можуть бути отримані тільки після
+                                    впровадження окремих інструментів, що допомагають лікарям якнайкраще оцінювати
+                                    потреби пацієнтів, а також фіксувати призначення, отримання окремих процедур або
+                                    медикаментів.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hidden-block__btn">
+                            <div class="hidden-block__link">
+                                <img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+                                <img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+                                <img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer-partners">
+                        <p class="footer-partners__title">Реалізовано за підтримки:</p>
+                        <div class="footer-partners__content d-lg-flex">
+                            <div class="footer-partners__item">
+                                <a class="footer-partners__link" href="#">
+                                    <svg class="footer-partners__icon">
+                                        <use xlink:href="img/sprite.svg#partners-institute"></use>
+                                    </svg>
+                                    Інституту аналітики та адвокації
+                                </a>
+                            </div>
+                            <div class="footer-partners__item">
+                                <a class="footer-partners__link" href="#">
+                                    <img class="footer-partners__img" src="img/irf-img.png" alt="Logo">
+                                    Міжнародного Фонду Відродження
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footnotes">
+                        <a class="footnotes__link" href="#">Методологічні пояснення</a>
+                        <div class="footnotes__txt">Паліатив 2020</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.general-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.general-title {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #034257;
+
+    @media (min-width: 992px) {
+        font-size: 22px;
+    }
+}
+
+.general-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    color: #034257;
+    padding-bottom: 20px;
+}
+
+.general-subtitle_pt_25 {
+    padding-top: 25px;
+}
+
+.general-link {
+    font-weight: normal;
+    font-size: 14px;
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 992px) {
+        font-weight: normal;
+        font-size: 18px;
+        color: #4671C6;
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+
+        @media (min-width: 992px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.canvas-chart {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.hidden-block {
+    padding-bottom: 50px;
+
+    &__wrapper {
+        position: relative;
+        max-height: 450px;
+        overflow: hidden;
+        transition: max-height .2s ease;
+
+        &.-expanded {
+            max-height: 100%;
+        }
+    }
+
+    &__wrapper:not(.-expanded)::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 45px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    &__txt {
+        font-size: 18px;
+        color: #656E71;
+    }
+}
+
+.year-select {
+    display: none;
+    border: 2px solid #E2ECF8;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    color: #656E71;
+}
+
+.tabs-content>div {
+    display: none;
+}
+
+.tabs-content>div.act {
+    display: block;
+}

@@ -1,0 +1,88 @@
+.methodology-content {
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+
+    &__item_theme_green {
+        background: #ECFFF9;
+        border-radius: 5px;
+    }
+}
+
+.methodology-head {
+    &__headline {
+        font-weight: normal;
+        font-size: 14px;
+        color: #034257;
+        padding-bottom: 15px;
+
+        @media (min-width: 992px) {
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.methodology-content {
+    &__txt {
+        font-weight: normal;
+        font-size: 14px;
+        color: #656E71;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+        }
+    }
+
+    &__txt_pb_20 {
+        padding-bottom: 10px;
+
+        @media (min-width: 992px) {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.methodology-disease {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 25%;
+    }
+}
+
+.methodology-source {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 55%;
+    }
+}
+
+.methodology-indicator {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 20%;
+    }
+}
+
+.methodology-head_mob {
+    display: block;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.methodology-head_desc {
+    @media (min-width: 992px) {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+}

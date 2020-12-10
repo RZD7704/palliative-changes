@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+	<link rel="stylesheet" href="css/libs/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<script src="js/libs/swiper.min.js"></script>
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<section class="main-banner">
+				<div class="main-partners__bg"></div>
+				<div class="container">
+					<div class="main-banner__wrap">
+						<div class="main-headline">
+							<p class="main-headline__subtiltle main-headline__subtiltle_theme_white text-left">НАПІВ</p>
+							<h1 class="main-headline__title">ПАЛІАТИВ</h1>
+							<h2 class="main-headline__subtext main-headline__subtext_theme_grey">Ця веб візуалізація створена на основі результатів дослідження надання паліативної допомоги в Полтаві 2018 року проведеного Інститутом аналітики та адвокації. З усіма результатами можна ознайомитися <a class="main-headline__subtext--link" href="https://iaa.org.ua/library/napiv-paliatyv-u-poltavi/">тут</a>
+							</h2>
+						</div>
+						<div class="main-banner__content">
+							<div class="main-partners">
+								<p class="main-partners__title pb-2">Проєкт реалізовано за підтримки:</p>
+								<div class="main-partners__logo-wrapper d-flex justify-content-around justify-content-lg-between">
+									<div class="main-partners__logo">
+										<img class="main-partners__img main-partners__img_w_160" src="img/logo-2.png" alt="Logo">
+									</div>
+									<div class="main-partners__logo">
+										<img class="main-partners__img" src="img/partners-logo.png" alt="Logo">
+									</div>
+								</div>
+							</div>
+							<!-- <div class="main-networks">
+								<a class="main-networks__link" href="#">
+									<p class="main-networks__name">Facebook</p>
+									<svg class="main-networks__icon">
+										<use xlink:href="img/sprite.svg#facebook-logo"></use>
+									</svg>
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="infrastructure" class="section section-infrastructure">
+				<div class="container">
+					<!-- <div class="general-head">
+						<h2 class="general-title">Інфраструктура</h2>
+						<select class="year-select">
+							<option value="2018">2018</option>
+						</select>
+					</div> -->
+					<p data-aos="fade-down-left" class="section-infrastructure__description pt-4 pb-0">Потреба у паліативній
+						допомозі має забезпечувати для 40% пацієнтів у стаціонарі та 60% мобільними службами. Згідно з
+						розрахунком та умовами закупівлі медичних послуг Національною Службою Здоровя України, у Полтаві
+						має бути щонайменше.
+					</p>
+					<div class="statistic">
+						<div data-aos="fade-up" class="statistic-сharts">
+							<div class="tabs-content">
+								<div class="2018 tabs act">
+									<div class="statistic-infrastructure">
+										<!-- <div
+											class="statistic-infrastructure__wrapper statistic-infrastructure__wrapper_desc">
+											<div class="statistic-infrastructure__item">
+												<p class="statistic-infrastructure__name">Стаціонар для дорослих та
+													дітей</p>
+												<div class="statistic-infrastructure__content">
+													<img class="statistic-infrastructure__icon"
+														src="img/hospital-white.png" alt="hospital">
+													<p class="statistic-infrastructure__num">2</p>
+													<div class="statistic-infrastructure__span">min</div>
+													<svg class="statistic-infrastructure__arr">
+														<use xlink:href="img/sprite.svg#chart-arr-white"></use>
+													</svg>
+													<p class="statistic-infrastructure__quantity">0</p>
+												</div>
+											</div>
+											<div class="statistic-infrastructure__item">
+												<p class="statistic-infrastructure__name">Служби для дорослих та дітей
+												</p>
+												<div class="statistic-infrastructure__content">
+													<img class="statistic-infrastructure__icon" src="img/car-white.png"
+														alt="car">
+													<p class="statistic-infrastructure__num">3</p>
+													<div class="statistic-infrastructure__span">min</div>
+													<svg class="statistic-infrastructure__arr">
+														<use xlink:href="img/sprite.svg#chart-arr-white"></use>
+													</svg>
+													<p class="statistic-infrastructure__quantity">0</p>
+												</div>
+											</div>
+											<div class="statistic-infrastructure__item">
+												<p class="statistic-infrastructure__name">Ліжка дорослим</p>
+												<div class="statistic-infrastructure__content">
+													<img class="statistic-infrastructure__icon"
+														src="img/child-white.png" alt="child">
+													<p class="statistic-infrastructure__num">16</p>
+													<div class="statistic-infrastructure__span">min</div>
+													<svg class="statistic-infrastructure__arr">
+														<use xlink:href="img/sprite.svg#chart-arr-white"></use>
+													</svg>
+													<p class="statistic-infrastructure__quantity">5</p>
+												</div>
+											</div>
+											<div class="statistic-infrastructure__item">
+												<p class="statistic-infrastructure__name">Ліжка дітям</p>
+												<div class="statistic-infrastructure__content">
+													<img class="statistic-infrastructure__icon" src="img/bad-white.png"
+														alt="Bed">
+													<p class="statistic-infrastructure__num">8</p>
+													<div class="statistic-infrastructure__span">min</div>
+													<svg class="statistic-infrastructure__arr">
+														<use xlink:href="img/sprite.svg#chart-arr-white"></use>
+													</svg>
+													<p class="statistic-infrastructure__quantity">5</p>
+												</div>
+											</div>
+										</div> -->
+										<div
+											class="statistic-infrastructure__wrapper statistic-infrastructure__wrapper_mob">
+											<div class="statistic-infrastructure-swiper swiper-container">
+												<div class="statistic-infrastructure-swiper__wrapper swiper-wrapper">
+													<div class="statistic-infrastructure-swiper__slide swiper-slide">
+														<div class="statistic-infrastructure__item">
+															<p class="statistic-infrastructure__name">Стаціонар для
+																дорослих та
+																дітей</p>
+															<div class="statistic-infrastructure__content">
+																<img class="statistic-infrastructure__icon"
+																	src="img/hospital-white.png" alt="hospital">
+																<p class="statistic-infrastructure__num">2</p>
+																<div class="statistic-infrastructure__span">min</div>
+																<svg class="statistic-infrastructure__arr">
+																	<use xlink:href="img/sprite.svg#chart-arr-white">
+																	</use>
+																</svg>
+																<p class="statistic-infrastructure__quantity">0</p>
+															</div>
+														</div>
+													</div>
+													<div class="statistic-infrastructure-swiper__slide swiper-slide">
+														<div class="statistic-infrastructure__item">
+															<p class="statistic-infrastructure__name">Служби для
+																дорослих та дітей
+															</p>
+															<div class="statistic-infrastructure__content">
+																<img class="statistic-infrastructure__icon"
+																	src="img/car-white.png" alt="car">
+																<p class="statistic-infrastructure__num">3</p>
+																<div class="statistic-infrastructure__span">min</div>
+																<svg class="statistic-infrastructure__arr">
+																	<use xlink:href="img/sprite.svg#chart-arr-white">
+																	</use>
+																</svg>
+																<p class="statistic-infrastructure__quantity">0</p>
+															</div>
+														</div>
+													</div>
+													<div class="statistic-infrastructure-swiper__slide swiper-slide">
+														<div class="statistic-infrastructure__item">
+															<p class="statistic-infrastructure__name">Ліжка дорослим</p>
+															<div class="statistic-infrastructure__content">
+																<img class="statistic-infrastructure__icon"
+																	src="img/child-white.png" alt="child">
+																<p class="statistic-infrastructure__num">16</p>
+																<div class="statistic-infrastructure__span">min</div>
+																<svg class="statistic-infrastructure__arr">
+																	<use xlink:href="img/sprite.svg#chart-arr-white">
+																	</use>
+																</svg>
+																<p class="statistic-infrastructure__quantity">5</p>
+															</div>
+														</div>
+													</div>
+													<div class="statistic-infrastructure-swiper__slide swiper-slide">
+														<div class="statistic-infrastructure__item">
+															<p class="statistic-infrastructure__name">Ліжка дітям</p>
+															<div class="statistic-infrastructure__content">
+																<img class="statistic-infrastructure__icon"
+																	src="img/bad-white.png" alt="Bed">
+																<p class="statistic-infrastructure__num">8</p>
+																<div class="statistic-infrastructure__span">min</div>
+																<svg class="statistic-infrastructure__arr">
+																	<use xlink:href="img/sprite.svg#chart-arr-white">
+																	</use>
+																</svg>
+																<p class="statistic-infrastructure__quantity">5</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Add Pagination -->
+												<div
+													class="statistic-infrastructure-swiper__pagination swiper-pagination">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <h4 class="general-subtitle general-subtitle_pt_25">Надавачі паліативної допомоги
+									</h4> -->
+									<!-- <div class="statistic-types">
+										<div class="statistic-types__wgt">
+											<div class="statistic-types__chart">
+												<canvas id="doneСhart2018" width="400" height="400"></canvas>
+											</div>
+											<div class="statistic-types__description">
+												<h4 class="statistic-types__title">100% допомоги</h4>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">ЦПСМД №2</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_dark-blue">
+													</div>
+													<div class="statistic-types__subtitle">4 МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_pink">
+													</div>
+													<div class="statistic-types__subtitle">ЦПСМД №1</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_brown">
+													</div>
+													<div class="statistic-types__subtitle">1 МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_yellow">
+													</div>
+													<div class="statistic-types__subtitle">ЦПСМД №3</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_green">
+													</div>
+													<div class="statistic-types__subtitle">3 МКЛ</div>
+												</div>
+											</div>
+										</div>
+										<div class="statistic-types__wgt">
+											<div class="statistic-types__chart">
+												<canvas id="noneСhart2018" width="400" height="400"></canvas>
+											</div>
+											<div class="statistic-types__description">
+												<h4 class="statistic-types__title">0% допомоги</h4>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">2 МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">5 МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">3 МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">Дитяча МКЛ</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">Пологовий будинок</div>
+												</div>
+												<div class="statistic-types__note">
+													<div
+														class="statistic-types__point statistic-types__point_theme_light-blue">
+													</div>
+													<div class="statistic-types__subtitle">Дитяча стомат-поліклініка
+													</div>
+												</div>
+											</div>
+										</div>
+									</div> -->
+								</div>
+								<!-- <div class="2019 tabs">
+									2019
+								</div>
+								<div class="2020 tabs">
+									2020
+								</div> -->
+							</div>
+						</div>
+						<!-- <div data-aos="flip-right" class="statistic-maintenance">
+							<div class="statistic-description">
+								<h3 class="statistic-description__title">Ситуація щодо забезпечення паліативної
+									допомоги</h3>
+								<p class="statistic-description__txt">Необхідний мінімум не забезпечений. У місті немає
+									не госпісу, ні окремих паліативних відділень. Краща ситуація з ліжками – забезпечено
+									42% потреби. У терапевтичному відділенні першої міської лікарні виділили 5
+									«паліативних» ліжок. Водночас 2 останні місяці 2018 року та увесь 2019 рік
+									терапевтичне відділення не працювало через ремонт. Інші 5 ліжок – у четвертій
+									полтавській лікарні. Третя лікарня надавала паліативну допомогу на ліжках загального
+									профілю.</p>
+								<p class="statistic-description__txt">Відповідно до рекомендацій Європейської Асоціації
+									з паліативної допомоги та розрахунку експертів, оптимально, аби в Полтаві 5 лікарів
+									та 36 медичних сестер спеціалізувались та надавали паліативну допомогу дорослим і
+									дітям у 3-ох стаціонарах. За даними міських лікувальних закладів «вторинки» у 2018
+									році послуги надавали 9 лікарів і 20 медичних сестер. Усі вони - з четвертої
+									лікарні. Решта ЛПЗ не вказували кількості, та відповідали, що паліативна допомога
+									надається:
+									• штатними співробітниками (МКЛ №1)
+									• лікарями різних спеціалізацій (МКЛ №3)
+									Для порівняння: 176 лікарів сімейної медицини Полтави опікувались потребами
+									пацієнтів, які потребують паліативної допомоги.
+								</p>
+								<div class="d-flex flex-column">
+									<p class="statistic-description__txt pb-0">
+										• штатними співробітниками (МКЛ №1)
+									</p>
+									<p class="statistic-description__txt">
+										• лікарями різних спеціалізацій (МКЛ №3)
+									</p>
+								</div>
+								<p class="statistic-description__txt">
+									Для порівняння: 176 лікарів сімейної медицини Полтави опікувались потребами
+									пацієнтів, які потребують паліативної допомоги.
+								</p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section id="needs" class="section section-assistance">
+				<div class="container">
+					<div class="general-head">
+						<h2 class="general-title">Потреба і надана допомога</h2>
+						<select class="year-select">
+							<option value="2018">2018</option>
+							<!-- <option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2020">2020</option> -->
+						</select>
+					</div>
+					<div class="statistic">
+						<div data-aos="fade-down" class="statistic-сharts">
+							<div class="tabs-content">
+								<div class="2018 tabs act">
+									<div class="tab-container">
+										<ul class="general-tabs nav" id="myTab" role="tablist">
+											<li class="general-tabs__item" role="presentation">
+												<a class="general-tabs__link active" id="home-tab" data-toggle="tab"
+													href="#home" role="tab" aria-controls="home"
+													aria-selected="true">загальна
+													статистика</a>
+											</li>
+											<li class="general-tabs__item" role="presentation">
+												<a class="general-tabs__link" id="profile-tab" data-toggle="tab"
+													href="#profile" role="tab" aria-controls="profile"
+													aria-selected="false">діти</a>
+											</li>
+											<li class="general-tabs__item" role="presentation">
+												<a class="general-tabs__link" id="contact-tab" data-toggle="tab"
+													href="#contact" role="tab" aria-controls="contact"
+													aria-selected="false">дорослі</a>
+											</li>
+										</ul>
+										<div class="statistic-content tab-content" id="myTabContent">
+											<div class="statistic-content__item tab-pane fade show active" id="home"
+												role="tabpanel" aria-labelledby="home-tab">
+												<div data-aos="zoom-out-right" class="statistic-general">
+													<div class="statistic-general-total">
+														<p class="statistic-general-total__txt">Полтавців потребують
+															допомоги
+														</p>
+														<div class="statistic-general-total__num">3757</div>
+													</div>
+													<div class="statistic-general-condition">
+														<div class="swiper-chart-all swiper-container">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<canvas id="slideChart1All" width="400"
+																		height="120"></canvas>
+																</div>
+																<div class="swiper-slide">
+																	<canvas id="slideChart2All" width="400"
+																		height="120"></canvas>
+																</div>
+															</div>
+															<div
+																class="swiper-chart__btn swiper-chart__btn_next swiper-chart__btn_next-all">
+																<svg class="swiper-chart__btn-icon">
+																	<use xlink:href="img/sprite.svg#chart-slider-arr">
+																	</use>
+																</svg>
+															</div>
+															<div
+																class="swiper-chart__btn swiper-chart__btn_prev swiper-chart__btn_prev-all">
+																<svg
+																	class="swiper-chart__btn-icon swiper-chart__btn-icon_rotate">
+																	<use xlink:href="img/sprite.svg#chart-slider-arr">
+																	</use>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div data-aos="zoom-out-left" class="statistic-specification">
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_desc">
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Новоутворення
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">1112
+																</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		92
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Серцево –
+																судинні захворювання
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">857</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		47
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Деменції
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">882</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		35
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Ревматоїдний
+																артрит
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">325</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		39
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_mob">
+														<div
+															class="swiper-specification swiper-specification-all swiper-container">
+															<div class="swiper-specification__wrapper swiper-wrapper">
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Новоутворення
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				1112
+																			</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					92
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Серцево –
+																			судинні захворювання
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				857</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					47
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Деменції
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				882</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					35
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Ревматоїдний
+																			артрит
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				325</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					39
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="swiper-specification__pagination swiper-pagination">
+															</div>
+														</div>
+													</div>
+												</div>
+												<h2 class="general-title pb-3">Полтавські надавачі паліативної допомоги</h2>
+												<div data-aos="zoom-out-up" class="statistic-types">
+													<div class="statistic-types__wgt chart-wgt">
+														<div class="statistic-types__chart">
+															<canvas class="canvas-chart" id="instСhartAll" width="50" height="50"></canvas>
+														</div>
+														<div class="statistic-types__description">
+															<h4 class="statistic-types__title">Заклади надання допомоги
+																дітям
+															</h4>
+															<div id="instLegendsAll"></div>
+															<!-- <div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №1</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №2</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_pink">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №3</div>
+															</div> -->
+														</div>
+													</div>
+													<div class="statistic-types__wgt chart-wgt">
+														<div class="statistic-types__chart">
+															<canvas class="canvas-chart" id="levelСhartAll" width="400"
+																height="400"></canvas>
+														</div>
+														<div class="statistic-types__description sec-2">
+															<h4 class="statistic-types__title">Рівні медичної допомоги
+															</h4>
+															<div id="levelLegendAll"></div>
+															<!-- <div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">Первинний</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">Вторинний</div>
+															</div> -->
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="statistic-content__item tab-pane fade" id="profile"
+												role="tabpanel" aria-labelledby="profile-tab">
+												<div data-aos="zoom-out-right" class="statistic-general">
+													<div class="statistic-general-total">
+														<p class="statistic-general-total__txt">Дітей потребують
+															допомоги
+														</p>
+														<div class="statistic-general-total__num">1217</div>
+													</div>
+													<div class="statistic-general-condition">
+														<canvas id="slideChartChild" width="400" height="120"></canvas>
+													</div>
+												</div>
+												<div data-aos="zoom-out-left" class="statistic-specification">
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_desc">
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Перинатальні стани
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">328</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">0
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Вроджені
+																вади
+																розвитку
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">272</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">4
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Новоутворення
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">263</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		2
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Дитячий
+																церебральний параліч
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">85</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		36
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_mob">
+														<div
+															class="swiper-specification swiper-specification-child swiper-container">
+															<div class="swiper-specification__wrapper swiper-wrapper">
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Перинатальні стани
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				328</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					0
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Вроджені
+																			вади
+																			розвитку
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				272</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					4
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Новоутворення
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				263</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					2
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Хронічні
+																			гепатити</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				70
+																			</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					13</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!-- Add Pagination -->
+															<div
+																class="swiper-specification__pagination swiper-specification__pagination-child swiper-pagination">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div data-aos="zoom-out-up" class="statistic-types">
+													<!-- <div class="statistic-types__wgt">
+														<div class="statistic-types__chart">
+															<canvas id="instСhartChild" width="400"
+																height="400"></canvas>
+														</div>
+														<div class="statistic-types__description">
+															<h4 class="statistic-types__title">Заклади надання допомоги
+																дітям
+															</h4>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №1</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №2</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_pink">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №3</div>
+															</div>
+														</div>
+													</div>
+													<div class="statistic-types__wgt">
+														<div class="statistic-types__chart">
+															<canvas id="levelСhartChild" width="400"
+																height="400"></canvas>
+														</div>
+														<div class="statistic-types__description">
+															<h4 class="statistic-types__title">Рівні медичної допомоги
+															</h4>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">Первинний</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">Вторинний</div>
+															</div>
+														</div>
+													</div> -->
+												</div>
+											</div>
+											<div class="statistic-content__item tab-pane fade" id="contact"
+												role="tabpanel" aria-labelledby="contact-tab">
+												<div data-aos="zoom-out-right" class="statistic-general">
+													<div class="statistic-general-total">
+														<p class="statistic-general-total__txt">Дорослих потребують
+															допомоги
+														</p>
+														<div class="statistic-general-total__num">2540</div>
+													</div>
+													<div class="statistic-general-condition">
+														<canvas id="slideChartOld" width="400" height="120"></canvas>
+													</div>
+												</div>
+												<div data-aos="zoom-out-left" class="statistic-specification">
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_desc">
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Новоутворення
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">784</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		92
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Серцево –
+																судинні захворювання
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">858</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		43
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">
+																Деменції
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">559</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		33
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+														<div class="statistic-specification__wgt">
+															<p class="statistic-specification__description">Ревматоїдний
+																артрит
+															</p>
+															<div class="statistic-specification__content">
+																<div class="statistic-specification__quantity">240</div>
+																<div class="statistic-specification__percent">
+																	<svg class="statistic-specification__percent--icon">
+																		<use xlink:href="img/sprite.svg#chart-arr">
+																		</use>
+																	</svg>
+																	<div class="statistic-specification__percent--num">
+																		3
+																	</div>
+																	<span
+																		class="statistic-specification__percent--sign">%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="statistic-specification__wrapper statistic-specification__wrapper_mob">
+														<div
+															class="swiper-specification swiper-specification-old swiper-container">
+															<div class="swiper-specification__wrapper swiper-wrapper">
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Новоутворення
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				784</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					92
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Серцево –
+																			судинні захворювання
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				858</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					43
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Деменції
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				559</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					33
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="swiper-specification__slide swiper-slide">
+																	<div class="statistic-specification__wgt">
+																		<p class="statistic-specification__description">
+																			Ревматоїдний
+																			артрит
+																		</p>
+																		<div class="statistic-specification__content">
+																			<div
+																				class="statistic-specification__quantity">
+																				240</div>
+																			<div
+																				class="statistic-specification__percent">
+																				<svg
+																					class="statistic-specification__percent--icon">
+																					<use
+																						xlink:href="img/sprite.svg#chart-arr">
+																					</use>
+																				</svg>
+																				<div
+																					class="statistic-specification__percent--num">
+																					3
+																				</div>
+																				<span
+																					class="statistic-specification__percent--sign">%</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="swiper-specification__pagination swiper-specification__pagination-old swiper-pagination">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div data-aos="zoom-out-up" class="statistic-types">
+													<!-- <div class="statistic-types__wgt">
+														<div class="statistic-types__chart">
+															<canvas id="instСhartOld" width="400" height="400"></canvas>
+														</div>
+														<div class="statistic-types__description">
+															<h4 class="statistic-types__title">Заклади надання допомоги
+																дітям
+															</h4>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №1</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №2</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_pink">
+																</div>
+																<div class="statistic-types__subtitle">ЦПСМД №3</div>
+															</div>
+														</div>
+													</div>
+													<div class="statistic-types__wgt">
+														<div class="statistic-types__chart">
+															<canvas id="levelСhartOld" width="400"
+																height="400"></canvas>
+														</div>
+														<div class="statistic-types__description">
+															<h4 class="statistic-types__title">Рівні медичної допомоги
+															</h4>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_light-blue">
+																</div>
+																<div class="statistic-types__subtitle">Первинний</div>
+															</div>
+															<div class="statistic-types__note">
+																<div
+																	class="statistic-types__point statistic-types__point_theme_dark-blue">
+																</div>
+																<div class="statistic-types__subtitle">Вторинний</div>
+															</div>
+														</div>
+													</div> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="2019 tabs">вкладка 2</div>
+								<div class="2020 tabs">какая-то вкладка 3</div> -->
+							</div>
+						</div>
+						<div data-aos="fade-left" class="statistic-maintenance">
+							<div class="statistic-notes">
+								<div class="statistic-notes__item">
+									<div class="statistic-notes__point statistic-notes__point_theme_pink">
+									</div>
+									<p class="statistic-notes__txt">
+										Потреба
+									</p>
+								</div>
+								<div class="statistic-notes__item">
+									<div class="statistic-notes__point statistic-notes__point_theme_blue">
+									</div>
+									<p class="statistic-notes__txt">
+										ЇЇ задоволення, %
+									</p>
+								</div>
+
+								<div class="statistic-notes__item">
+									<div class="statistic-notes__point statistic-notes__point_theme_white">
+									</div>
+									<p class="statistic-notes__txt">
+										Відсутність виконання
+									</p>
+								</div>
+							</div>
+							<div class="statistic-description">
+								<h3 class="statistic-description__title">Потреби щодо застосування</h3>
+								<p class="statistic-description__txt">Із 2011 року в Україні існує офіційна методика
+									розрахунку потреби в паліативній допомозі. Вона дуже загальна й не достатньо
+									коректна. Протягом останніх років паліативна спільнота активно говорить про її
+									недосконалість. Експерти з паліативної допомоги, медичної статистики, демографії,
+									Всесвітня організація охорони здоров’я і Міністерства охорони здоров’я України,
+									вивчили як найкраще використати рутинні дані (Держстату, Медстату, електронних
+									реєстрів пацієнтів) для більш достовірної оцінки потреби у паліативній допомозі в
+									Україні.</p>
+								<p class="statistic-description__txt">Використавши статистичні дані 2018 року та
+									розроблено методологію, розрахували потребу в паліативній допомозі для міста
+									Полтава.</p>
+							</div>
+						</div>
+						<!-- <div data-aos="zoom-in-up" class="statistic-other">
+							<div class="general-subtitle">Інші</div>
+							<div class="statistic-other__wrapper">
+								<div class="statistic-other__wgt">
+									<svg class="statistic-other__icon">
+										<use xlink:href="img/sprite.svg#group-svg"></use>
+									</svg>
+									<div class="statistic-other__description">
+										<div class="statistic-other__name">Бездомні особи</div>
+										<div class="statistic-other__quantity">
+											<div class="statistic-other__quantity--name">4 МКЛ</div>
+											<svg class="statistic-other__quantity--icon">
+												<use xlink:href="img/sprite.svg#chart-arr"></use>
+											</svg>
+											<div class="statistic-other__quantity--num">7</div>
+										</div>
+									</div>
+								</div>
+								<div class="statistic-other__wgt">
+									<svg class="statistic-other__icon">
+										<use xlink:href="img/sprite.svg#group-svg"></use>
+									</svg>
+									<div class="statistic-other__description">
+										<div class="statistic-other__name">Травми </div>
+										<div class="statistic-other__quantity">
+											<div class="statistic-other__quantity--name">3 МКЛ</div>
+											<svg class="statistic-other__quantity--icon">
+												<use xlink:href="img/sprite.svg#chart-arr"></use>
+											</svg>
+											<div class="statistic-other__quantity--num">3</div>
+										</div>
+									</div>
+								</div>
+								<div class="statistic-other__wgt">
+									<svg class="statistic-other__icon">
+										<use xlink:href="img/sprite.svg#group-svg"></use>
+									</svg>
+									<div class="statistic-other__description">
+										<div class="statistic-other__name">Оформлення в геріатричний будинок</div>
+										<div class="statistic-other__quantity">
+											<div class="statistic-other__quantity--name">4 МКЛ</div>
+											<svg class="statistic-other__quantity--icon">
+												<use xlink:href="img/sprite.svg#chart-arr"></use>
+											</svg>
+											<div class="statistic-other__quantity--num">1</div>
+										</div>
+									</div>
+								</div>
+								<div class="statistic-other__wgt">
+									<svg class="statistic-other__icon">
+										<use xlink:href="img/sprite.svg#group-svg"></use>
+									</svg>
+									<div class="statistic-other__description">
+										<div class="statistic-other__name">Калькульозний панкреатит</div>
+										<div class="statistic-other__quantity">
+											<div class="statistic-other__quantity--name">ЦПМСД №3</div>
+											<svg class="statistic-other__quantity--icon">
+												<use xlink:href="img/sprite.svg#chart-arr"></use>
+											</svg>
+											<div class="statistic-other__quantity--num">1</div>
+										</div>
+									</div>
+								</div>
+								<div class="statistic-other__wgt">
+									<svg class="statistic-other__icon">
+										<use xlink:href="img/sprite.svg#group-svg"></use>
+									</svg>
+									<div class="statistic-other__description">
+										<div class="statistic-other__name">Муковісцидоз</div>
+										<div class="statistic-other__quantity">
+											<div class="statistic-other__quantity--name">ЦПМСД №1</div>
+											<svg class="statistic-other__quantity--icon">
+												<use xlink:href="img/sprite.svg#chart-arr"></use>
+											</svg>
+											<div class="statistic-other__quantity--num">1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section id="general-info" class="section-care">
+				<div class="container">
+					<!-- <div class="general-head">
+						<h2 class="general-title">Заради гідності</h2>
+					</div> -->
+					<div class="section-care__wrapper">
+						<div data-aos="flip-right" class="section-care-description pt-5">
+							<p class="section-care-description__txt">Людство завжди піклувалось про вмираючих нужденних:
+								дати притулок, нагодувати, заспокоїти та підтримати. У 1981 році Всесвітня організація
+								охорони здоров’я прийняла Лісабонську декларацію – перелік прав пацієнта, серед яких
+								окремо виділили право на смерть із гідністю.</p>
+							<!-- <p class="section-care-description__txt">Це був перший крок до розбудови паліативної
+								допомоги у світі. Далі утворилась Європейська Асоціація з паліативної допомоги(ЕАПС),
+								розроблялися міжнародні стандарти з надання паліативної допомоги , впроваджувались
+								клінічні протоколи, відкривалися госпіси та профільні відділення. Із відставанням,
+								Україна долучилась до цього процесу. Як щодо Полтави?</p> -->
+							<p class="section-care-description__txt">Галузь охорони здоров’я Полтави налічує 12 міських
+								лікувально-профілактичних закладів(ЛПЗ), серед яких немає спеціалізованих установ для
+								надання паліативної допомоги.</p>
+						</div>
+						<!-- <div class="section-care-parts">
+							<div data-aos="zoom-in" class="section-care-parts__item">
+								<img class="section-care-parts__icon" src="img/hospital2.png" alt="Logo">
+								<div class="section-care-parts__description">
+									<h4 class="section-care-parts__headline">Первинна ланка</h4>
+									<p class="section-care-parts__txt">центри первинної медико-санітарної допомоги
+										(ЦПМСД)
+									</p>
+								</div>
+							</div>
+							<div data-aos="zoom-in" class="section-care-parts__item">
+								<img class="section-care-parts__icon" src="img/hospital1.png" alt="Logo">
+								<div class="section-care-parts__description">
+									<h4 class="section-care-parts__headline">Вторинна спеціалізована ланка</h4>
+									<p class="section-care-parts__txt">міські лікарні</p>
+								</div>
+							</div>
+							<div data-aos="zoom-in" class="section-care-parts__item">
+								<img class="section-care-parts__icon" src="img/hospital3.png" alt="Logo">
+								<div class="section-care-parts__description">
+									<h4 class="section-care-parts__headline">Третинна високоспеціалізована ланка</h4>
+									<p class="section-care-parts__txt">обласні медичні заклади</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<!-- <section id="possibility" class="section-points">
+				<div class="container">
+					<div class="section-points__row">
+						<div data-aos="zoom-in-right" class="section-points__col">
+							<h3 class="section-points__title">Можливість полегшити страждання від:</h3>
+							<div class="section-points__wrapper">
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus1.png" alt="Logo">
+									<p class="section-points__txt">Злоякісних новоутворень</p>
+								</div>
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus2.png" alt="Logo">
+									<p class="section-points__txt">Хронічних обструктивних захворювань легень</p>
+								</div>
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus3.png" alt="Logo">
+									<p class="section-points__txt">Діабету</p>
+								</div>
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus4.png" alt="Logo">
+									<p class="section-points__txt">Хронічної серцевої недостатності</p>
+								</div>
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus5.png" alt="Logo">
+									<p class="section-points__txt">Хвороб нирок</p>
+								</div>
+								<div data-aos="fade-right" class="section-points__item">
+									<img class="section-points__icon" src="img/virus6.png" alt="Logo">
+									<p class="section-points__txt">Хвороб Альцгеймера, Паркінсона</p>
+								</div>
+							</div>
+						</div>
+						<div data-aos="zoom-in-left" class="section-points__col">
+							<h3 class="section-points__title">Можливість полегшити такі симтоми:</h3>
+							<div class="section-points__wrapper">
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers1.png" alt="Logo">
+									<p class="section-points__txt">Біль</p>
+								</div>
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers2.png" alt="Logo">
+									<p class="section-points__txt">Задуха, проблеми з диханням</p>
+								</div>
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers3.png" alt="Logo">
+									<p class="section-points__txt">Депресія</p>
+								</div>
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers4.png" alt="Logo">
+									<p class="section-points__txt">Нудота, діарея, блювання</p>
+								</div>
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers5.png" alt="Logo">
+									<p class="section-points__txt">Безсоння</p>
+								</div>
+								<div data-aos="fade-left" class="section-points__item">
+									<img class="section-points__icon" src="img/pers6.png" alt="Logo">
+									<p class="section-points__txt">Втома</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- <section id="benefits" class="section-benefits">
+				<div class="container">
+					<div data-aos="fade-down-right" class="general-head">
+						<h2 class="general-title">Переваги</h2>
+					</div>
+					<p data-aos="fade-down-left" class="section-benefits__description">Важливо аби пацієнт своєчасно
+						отримував паліативну допомогу. Сімейні лікарі мають відігравати основну роль у цьому процесі.
+						Офіційний порядок надання первинної меддопомоги визначає особливості надання окремих послуг
+						паліативної допомоги пацієнтам усіх вікових категорій, а саме:
+					</p>
+					<div class="section-benefits__points">
+						<div data-aos="zoom-out-right" class="section-benefits__item">
+							<p class="section-benefits__txt">регулярну оцінку стану важкохворого пацієнта та їх потреб
+							</p>
+						</div>
+						<div data-aos="zoom-out-left" class="section-benefits__item">
+							<p class="section-benefits__txt">оцінку ступеня болю та лікування больового синдрому
+							</p>
+						</div>
+						<div data-aos="zoom-out-right" class="section-benefits__item">
+							<p class="section-benefits__txt">консультування та навчання осіб, які доглядають пацієнта
+							</p>
+						</div>
+						<div data-aos="zoom-out-left" class="section-benefits__item">
+							<p class="section-benefits__txt">координація із забезпечення медичних, психологічних та
+								інших потреб пацієнта
+							</p>
+						</div>
+						<div data-aos="zoom-out-right" class="section-benefits__item">
+							<p class="section-benefits__txt">призначення наркотичних засобів та психотропних речовин
+								відповідно до законодавства, включаючи оформлення рецептів та лікування больового
+								синдрому
+							</p>
+						</div>
+						<div data-aos="zoom-out-left" class="section-benefits__item">
+							<p class="section-benefits__txt">призначення лікування для подолання супутніх симптомів
+								(закрепи, нудота, задуха)
+							</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			
+			<section id="total" class="section-total">
+				<div class="container">
+					<div class="general-head">
+						<h2 class="general-title">Насамкінець</h2>
+					</div>
+					<div data-aos="zoom-out-down" class="hidden-block">
+						<div class="hidden-block__wrapper">
+							<!-- <div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									Галузь охорони здоров’я Полтавщини вирізняться з-поміж інших областей України. Це
+									підтверджують чисельні інвестиційні ініціативи, які довели свою успішність,
+									ефективна приписна кампанія до сімейних лікарів і реалізація пілотного проекту за
+									новою моделлю фінансування закладів вторинного рівня. Але яка ситуація з паліативною
+									допомогою?
+								</p>
+							</div>
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									О тепер в умовах стаціонару паліативні послуги надавали 8 медичних закладів:
+									обласні; міські кременчуцькі і лубенські; районні лохвицькі, кобеляцькі й
+									миргородські. У обласному центрі немає жодного госпісу чи паліативного відділення на
+									базу клінічної лікарні. Щоправда, у своїх листах – відповідях на запити, перша,
+									третя, четверта і дитяча міські лікарні, проінформували, що надавали паліативну
+									допомогу пацієнтам у 2018-2019 роках. Також у межах Полтави функціонують обласна
+									психіатрична лікарня та СНІД – центр, які надають паліативну допомогу мешканцям
+									області та міста зокрема.
+								</p>
+							</div>
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									Цікаво, що у 2020 році одразу 17 закладів охорони здоров’я подали свої заявки до
+									Національної Служби Здоров’я України для надання стаціонарної паліативної допомоги в
+									області. Серед них 4 медичні заклади, які розміщуються в межах Полтави: обласні
+									клінічна психіатрична лікарня ім. О.Ф. Мальцева, центр профілактики та боротьби з
+									ВІЛ\СНІДом, клінічний госпіталь для ветеранів війни та міська дитяча клінічна
+									лікарня.
+								</p>
+							</div>
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									Достатньо цього чи мало, має пояснити розрахунок потреби в паліативній допомозі.
+									Офіційний метод, на жаль, не враховує всіх показників. Експерти розробили власний
+									алгоритм, який включає більше інформації. Використавши його на основі даних 2018
+									року, встановили, що 3 757 жителів Полтави потребували паліативної допомоги: 1 217
+									дітей та 2 540 дорослих. Відносно повної потреби Полтавщини мешканці обласного
+									центру складають 1/3.
+								</p>
+							</div>
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									На противагу розрахованій потребі, встановили, що 2018 року 1 333 полтавців отримали
+									паліативну допомогу в міських лікарнях. Відтак, можна припустити, що 64% пацієнтів
+									не отримали необхідних послуг. Ми також не знаємо чи якісними були паліативні
+									послуги для тих 36%, які формально їх отримали.
+								</p>
+							</div> -->
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									З-поміж 12 лікувально-профілактичних закладів паліативну допомогу надавали в 6
+									установах. Дітей обслуговували виключно в центрах первинної медичної допомоги,
+									дорослих – і в клінічних лікарнях також. Загалом найбільша кількість пацієнтів(діти
+									+ дорослі) зверталися до ЦМСД №2.
+								</p>
+							</div>
+							<div class="hidden-block__item">
+								<p class="hidden-block__txt">
+									Паліативна допомога часто асоціюється лише з допомогою в останній період життя
+									невиліковно хворого, зокрема – зі знеболенням опіоїдними анальгетиками. Але
+									насправді паліативна допомога – значно ширше поняття. Враховуючи медичну реформу та
+									виокремлення Національною Службою Здоров’я України паліативної допомоги до двох
+									окремих груп послуг (стаціонарна та мобільна), уже помітна позитивна динаміка до
+									збільшення кількості лікувальних закладів – надавачів. Отже, 2020 рік може стати
+									переломним для задоволення потреби полтавців на більшому рівні, ніж 36% від
+									розрахункових оцінок.
+								</p>
+							</div>
+						</div>
+						<div class="hidden-block__btn">
+							<div class="hidden-block__link">
+								<img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+								<img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+								<img class="hidden-block__points" src="img/hidden-line.png" alt="Line">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<div class="footer-partners">
+						<div class="footer-partners__item">
+							<a class="footer-partners__link" target="_blank"  href="https://iaa.org.ua/library/napiv-paliatyv-u-poltavi/">
+								Аби знати все - клікай на лого
+								<svg class="footer-partners__icon">
+									<use xlink:href="img/sprite.svg#partners-institute"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footnotes-txt">&copy;Інститут аналітики та адвокації, 2020</div>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+	<script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
