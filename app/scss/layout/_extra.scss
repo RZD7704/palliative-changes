@@ -137,6 +137,21 @@
 }
 
 .chart-smart {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: 992px) {
+        width: 150px;
+        height: 150px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 180px;
+        height: 180px;
+    }
+
     &__circle {
         animation: circle-chart-fill 2s reverse;
         transform: rotate(-90deg);
