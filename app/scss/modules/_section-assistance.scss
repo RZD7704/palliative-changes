@@ -16,7 +16,7 @@
 }
 
 .general-tabs {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     &__item {
         margin-right: 25px;
@@ -242,6 +242,17 @@
         }
     }
 
+    &__chart-txt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+        font-size: 20px;
+        color: #363636;
+        z-index: -1;
+    }
+
     &__description {
         padding-left: 20px;
         width: 100%;
@@ -275,7 +286,7 @@
     &__point {
         width: 10px;
         height: 10px;
-        margin-right: 25px;
+        margin-right: 20px;
         border-radius: 50%;
     }
 

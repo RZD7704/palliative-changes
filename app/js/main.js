@@ -185,7 +185,7 @@ function customChart() {
 customChart();
 
 
-function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen) {
+function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt) {
     var ctx = document.querySelector(selector);
     var Сhart = new Chart(ctx, {
         type: 'doughnut',
@@ -237,10 +237,16 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen) {
                     return '';
                   },
                   afterLabel: function(tooltipItem, data) {
+                    var name = data['labels'][tooltipItem['index']];
                     var dataset = data['datasets'][0];
                     var percent = data['datasets'][0]['data'][tooltipItem['index']];
                     lightPoint(selector, tooltipItem['index']);
-                    return percent + '';
+                    if(txt) {
+                        return txt + percent + '';
+                    } else {
+                        return name + ': ' + percent;
+
+                    }
                   }
                 },
                 displayColors: false
@@ -265,9 +271,9 @@ function lightPoint(selector, index) {
 // addBarChart('#slideChart1All', [6, 3, 6, 9, 3, 1, 2, 17, 5, 0, 8, 0, 7, 4, 2, 13, 2, 0, 2, 3, 1, 0, 1, 22], ['Ревматоїдний артрит - 240', 'Ревматоїдний артрит', 'Цукровий діабет - 259', 'Цукровий діабет', 'Туберкульоз - 107', 'Туберкульоз', 'ВІЛ/СНІД - 32', 'ВІЛ/СНІД', 'Хронічне обструктивне захворювання легень - 5', 'Хронічне обструктивне захворювання легень', 'Перинатальні стани -328', 'Перинатальні стани', 'Вродженні вади розвитку - 272', 'Вродженні вади розвитку', 'Розумова відсталість (важка і глибока) - 48', 'Розумова відсталість (важка і глибока)', 'Хронічні гепатити - 33', 'Хронічні гепатити', 'Запальні хвороби ЦНС - 30', 'Запальні хвороби ЦНС', 'Фенілкетонурія - 11', 'Фенілкетонурія', 'Муковісцидоз - 9', 'Муковісцидоз']);
 
 
-addDoughnutChart('#chartNeedsAll', [1217, 2540], ['Потребують', 'Допомогли'], ['#A4C9FF', '#2147A4'],"#legendsNeedsAll");
-addDoughnutChart('#chartChildAll', [1217, 1151], ['Потребують', 'Допомогли'], ['#A4EFFF', '#F9A7A7'],"#legendsChildAll");
-addDoughnutChart('#chartOldAll', [2540, 1273], ['Потребують', 'Допомогли'], ['#A4EFFF', '#F9A7A7'],"#legendsOldAll");
+addDoughnutChart('#chartNeedsAll', [1217, 2540], ['Діти', 'Дорослі'], ['#A4C9FF', '#2147A4'],"#legendsNeedsAll", 'Потребують: ');
+addDoughnutChart('#chartChildAll', [1151, 66], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsChildAll");
+addDoughnutChart('#chartOldAll', [1273, 1267], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsOldAll");
 
 addDoughnutChart('#instСhartAll', [45, 38, 17], ['ЦПСМД №1', 'ЦПСМД №2', 'ЦПСМД №3'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)'],"#instLegendsAll");
 addDoughnutChart('#levelСhartAll', [74, 26], ['Первинний', 'Вторинний'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)'],"#levelLegendAll");

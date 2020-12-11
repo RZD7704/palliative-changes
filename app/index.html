@@ -13,8 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<script src="js/libs/swiper.min.js"></script>
-	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<!-- <script src="js/libs/jquery-3.4.1.min.js"></script> -->
 </head>
 
 <body>
@@ -173,39 +172,6 @@
 						<div data-aos="fade-down" class="statistic-сharts">
 							<div class="tabs-content">
 								<div class="2018 tabs act">
-									<!-- <div class="tab-container">
-										<ul class="general-tabs nav" id="myTab" role="tablist">
-											<li class="general-tabs__item" role="presentation">
-												<a class="general-tabs__link active" id="home-tab" data-toggle="tab"
-													href="#home" role="tab" aria-controls="home"
-													aria-selected="true">загальна
-													статистика</a>
-											</li>
-											<li class="general-tabs__item" role="presentation">
-												<a class="general-tabs__link" id="profile-tab" data-toggle="tab"
-													href="#profile" role="tab" aria-controls="profile"
-													aria-selected="false">діти</a>
-											</li>
-											<li class="general-tabs__item" role="presentation">
-												<a class="general-tabs__link" id="contact-tab" data-toggle="tab"
-													href="#contact" role="tab" aria-controls="contact"
-													aria-selected="false">дорослі</a>
-											</li>
-										</ul>
-										<div class="statistic-content tab-content" id="myTabContent">
-											<div class="statistic-content__item tab-pane fade show active" id="home"
-												role="tabpanel" aria-labelledby="home-tab">
-												
-											</div>
-											<div class="statistic-content__item tab-pane fade" id="profile"
-												role="tabpanel" aria-labelledby="profile-tab">
-											</div>
-											<div class="statistic-content__item tab-pane fade" id="contact"
-												role="tabpanel" aria-labelledby="contact-tab">
-												
-											</div>
-										</div>
-									</div> -->
 									<h2 class="general-subtitle pb-3">Заголовок</h2>
 									<div data-aos="zoom-out-up" class="statistic-types">
 										<div class="statistic-types__wgt chart-wgt">
@@ -214,26 +180,27 @@
 													<div class="chart-box">
 														<div class="chart-tooltip"></div>
 														<svg class="chart-smart chart-smart-js" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
-															<circle class="chart-smart__background tooltip-circle" stroke="#A4C9FF" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="top" title="Потребують" data-i="1" data-title="Потребують: 64%" />
-																<text x="50%" y="57%" text-anchor="middle" font-size="0.5em" fill="#363636">36%</text>
-															<circle class="chart-smart__circle tooltip-circle" stroke="#2147A4" stroke-width="2" stroke-dasharray="36,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="right" title="Надано"  data-i="2" data-title="Надано: 36%"/>
+															<circle class="chart-smart__background tooltip-circle" stroke="#A4C9FF" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="top" title="Не отримали" data-i="1" data-title="Не отримали: 64%" />
+																<text x="50%" y="57%" text-anchor="middle" font-size="0.5em" fill="#363636">3756</text>
+															<circle class="chart-smart__circle tooltip-circle" stroke="#2147A4" stroke-width="2" stroke-dasharray="36,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="right" title="Отримали"  data-i="2" data-title="Отримали: 36%"/>
 														</svg>
 													</div>
 											</div>
 											</div>
 											<div class="statistic-types__description">
-												<h4 class="statistic-types__title">Задоволення в потребі
+												<h4 class="statistic-types__title">Задоволення потреби
 												</h4>
 												<div id="customChartPoints"></div>
 											</div>
 										</div>
 										<div class="statistic-types__wgt chart-wgt">
-											<div class="statistic-types__chart">
+											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartNeedsAll" width="400"
 													height="400"></canvas>
+												<div class="statistic-types__chart-txt">3757</div>
 											</div>
 											<div class="statistic-types__description sec-2">
-												<h4 class="statistic-types__title">Потреба
+												<h4 class="statistic-types__title">Потреба дітей і дорослих
 												</h4>
 												<div id="legendsNeedsAll"></div>
 											</div>
@@ -241,11 +208,12 @@
 									</div>
 									<div data-aos="zoom-out-up" class="statistic-types mt-2">
 										<div class="statistic-types__wgt chart-wgt">
-											<div class="statistic-types__chart">
+											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartChildAll" width="50" height="50"></canvas>
+												<div class="statistic-types__chart-txt">1217</div>
 											</div>
 											<div class="statistic-types__description">
-												<h4 class="statistic-types__title">Діти
+												<h4 class="statistic-types__title">Задоволення потреби дітей
 												</h4>
 												<div id="legendsChildAll"></div>
 												<!-- <div class="statistic-types__note">
@@ -269,12 +237,13 @@
 											</div>
 										</div>
 										<div class="statistic-types__wgt chart-wgt">
-											<div class="statistic-types__chart">
+											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartOldAll" width="400"
 													height="400"></canvas>
+												<div class="statistic-types__chart-txt">2540</div>
 											</div>
 											<div class="statistic-types__description sec-2">
-												<h4 class="statistic-types__title">Дорослі
+												<h4 class="statistic-types__title">Задоволення потреби дорослих
 												</h4>
 												<div id="legendsOldAll"></div>
 												<!-- <div class="statistic-types__note">
@@ -480,67 +449,426 @@
 					<div class="general-head">
 						<h2 class="general-title">Заради гідності</h2>
 					</div>
-					<div class="bar-block row justify-content-around">
-						<div class="col-md-5 bar-block__wgt">
-							<div class="bar-block__item">
-								<div class="bar-block__head">
-									<div class="bar-block__head-name">Новоутворення</div>
-									<div class="bar-block__head-num">1134</div>
-								</div>
-								<div class="bar-wrapper">
-									<div class="bar-block__progress progress">
-										<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+
+					<div class="tab-container">
+						<ul class="general-tabs nav" id="myTab" role="tablist">
+							<li class="general-tabs__item" role="presentation">
+								<a class="general-tabs__link active" id="profile-tab" data-toggle="tab"
+									href="#profile" role="tab" aria-controls="profile"
+									aria-selected="false">діти</a>
+							</li>
+							<li class="general-tabs__item" role="presentation">
+								<a class="general-tabs__link" id="contact-tab" data-toggle="tab"
+									href="#contact" role="tab" aria-controls="contact"
+									aria-selected="false">дорослі</a>
+							</li>
+						</ul>
+						<div class="statistic-content tab-content" id="myTabContent">
+							<div class="statistic-content__item tab-pane fade active show" id="profile"
+								role="tabpanel" aria-labelledby="profile-tab">
+								<div class="bar-block row justify-content-around">
+									<div class="col-md-5 bar-block__wgt">
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="bar-wrapper__popup">
-										<div class="bar-wrapper__popup-txt">42</div>
-										<div class="bar-wrapper__popup-sub">дні</div>
+									<div class="col-md-5 bar-block__wgt">
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bar-block__item">
-								<div class="bar-block__head">
-									<div class="bar-block__head-name">Назва хвороби</div>
-									<div class="bar-block__head-num">1354</div>
-								</div>
-								<div class="bar-wrapper">
-									<div class="bar-block__progress progress">
-										<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+							<div class="statistic-content__item tab-pane fade" id="contact"
+								role="tabpanel" aria-labelledby="contact-tab">
+								<div class="bar-block row justify-content-around">
+									<div class="col-md-5 bar-block__wgt">
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Новоутворення</div>
+												<div class="bar-block__head-num">1134</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">1354</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">56%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="bar-wrapper__popup">
-										<div class="bar-wrapper__popup-txt">42</div>
-										<div class="bar-wrapper__popup-sub">дні</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-5 bar-block__wgt">
-							<div class="bar-block__item">
-								<div class="bar-block__head">
-									<div class="bar-block__head-name">Назва хвороби</div>
-									<div class="bar-block__head-num">344</div>
-								</div>
-								<div class="bar-wrapper">
-									<div class="bar-block__progress progress">
-										<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-									</div>
-									<div class="bar-wrapper__popup">
-										<div class="bar-wrapper__popup-txt">42</div>
-										<div class="bar-wrapper__popup-sub">дні</div>
-									</div>
-								</div>
-							</div>
-							<div class="bar-block__item">
-								<div class="bar-block__head">
-									<div class="bar-block__head-name">Назва хвороби</div>
-									<div class="bar-block__head-num">801</div>
-								</div>
-								<div class="bar-wrapper">
-									<div class="bar-block__progress progress">
-										<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-									</div>
-									<div class="bar-wrapper__popup">
-										<div class="bar-wrapper__popup-txt">42</div>
-										<div class="bar-wrapper__popup-sub">дні</div>
+									<div class="col-md-5 bar-block__wgt">
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">344</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
+										<div class="bar-block__item">
+											<div class="bar-block__head">
+												<div class="bar-block__head-name">Назва хвороби</div>
+												<div class="bar-block__head-num">801</div>
+											</div>
+											<div class="bar-wrapper">
+												<div class="bar-block__progress progress">
+													<div class="bar-block__progress-bar progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+												</div>
+												<div class="bar-wrapper__popup">
+													<div class="bar-wrapper__popup-txt">42</div>
+													<div class="bar-wrapper__popup-sub">дні</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -550,11 +878,8 @@
 			</section>
 			<section id="general-info" class="section-care">
 				<div class="container">
-					<!-- <div class="general-head">
-						<h2 class="general-title">Заради гідності</h2>
-					</div> -->
 					<div class="section-care__wrapper">
-						<div data-aos="flip-right" class="section-care-description pt-5">
+						<div data-aos="flip-right" class="section-care-description pt-3">
 							<p class="section-care-description__txt">Людство завжди піклувалось про вмираючих нужденних:
 								дати притулок, нагодувати, заспокоїти та підтримати. У 1981 році Всесвітня організація
 								охорони здоров’я прийняла Лісабонську декларацію – перелік прав пацієнта, серед яких
@@ -811,11 +1136,12 @@
 		</footer>
 	</div>
 
-
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/swiper.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
-	<script src="js/libs/popper.min.js"></script>
-	<script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
