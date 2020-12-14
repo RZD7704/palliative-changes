@@ -185,7 +185,7 @@ function customChart() {
 customChart();
 
 
-function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, bulian, percent) {
+function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, bulian, percentArg) {
     var ctx = document.querySelector(selector);
     var Сhart = new Chart(ctx, {
         type: 'doughnut',
@@ -241,17 +241,16 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, 
                     var dataset = data['datasets'][0];
                     var percent = data['datasets'][0]['data'][tooltipItem['index']];
                     lightPoint(selector, tooltipItem['index']);
+                     
                     if(txt && bulian) {
                         return name + ': ' + txt + '%';
-                    }  else if(percent) {
+                    } else if(percentArg) {
                         return name + ': ' + percent + '%';
-                    }  else if(txt) {
+                    } else if(txt) {
                         return txt + percent + '';
                     } else {
                         return name + ': ' + percent;
                     }
-
-                  
                   }
                 },
                 displayColors: false
