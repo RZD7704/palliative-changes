@@ -185,7 +185,7 @@ function customChart() {
 customChart();
 
 
-function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt) {
+function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, bulian, percent) {
     var ctx = document.querySelector(selector);
     var Сhart = new Chart(ctx, {
         type: 'doughnut',
@@ -241,12 +241,17 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt) 
                     var dataset = data['datasets'][0];
                     var percent = data['datasets'][0]['data'][tooltipItem['index']];
                     lightPoint(selector, tooltipItem['index']);
-                    if(txt) {
+                    if(txt && bulian) {
+                        return name + ': ' + txt + '%';
+                    }  else if(percent) {
+                        return name + ': ' + percent + '%';
+                    }  else if(txt) {
                         return txt + percent + '';
                     } else {
                         return name + ': ' + percent;
-
                     }
+
+                  
                   }
                 },
                 displayColors: false
@@ -276,4 +281,10 @@ addDoughnutChart('#chartChildAll', [1151, 66], ['Не отримали', 'Отр
 addDoughnutChart('#chartOldAll', [1273, 1267], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsOldAll");
 
 addDoughnutChart('#instСhartAll', [45, 38, 17], ['ЦПСМД №1', 'ЦПСМД №2', 'ЦПСМД №3'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)'],"#instLegendsAll");
-addDoughnutChart('#levelСhartAll', [74, 26], ['Первинний', 'Вторинний'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)'],"#levelLegendAll");
+addDoughnutChart('#levelСhartAll', [74, 26], ['Первинний', 'Вторинний'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)'],"#levelLegendAll");
+
+addDoughnutChart('#providersСhartAll', [51, 15, 13, 10, 10, 1], ['ЦПСМД №2', '4 МКЛ', 'ЦПСМД №1', '2 МКЛ', 'ЦПСМД №3', '3 МКЛ'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)', 'rgba(221, 118, 118, 0.8)', 'rgba(255, 234, 146, 0.8)', 'rgba(12, 218, 232, 0.8)'],"#providersLegendsAll");
+addDoughnutChart('#providersСhartNone', [100], ['Не задоволено'], ['rgba(164, 201, 255, 0.8)'],"#providersLegendNone");
+
+addDoughnutChart('#providersСhartBuild', [100], ['Надано'], ['#A4EFFF'], "#providersLegendsBuild", '0', true);
+addDoughnutChart('#providersСhartBet', [42, 58], ['Надано','Не надано'], ['#A4EFFF', '#F9A7A7'],"#providersLegendBet", '', true, true);

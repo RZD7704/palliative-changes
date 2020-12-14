@@ -1,3 +1,13 @@
+.chart-max-height {
+    @media(min-width: 992px) {
+        max-height: 220px;
+    }
+
+    @media(min-width: 1200px) {
+        max-height: 265px;
+    }
+}
+
 .general-head {
     display: flex;
     align-items: center;
@@ -161,6 +171,6 @@
 
 .chart-smart text {
     font-weight: 500;
-    font-size: 5px;
+    font-size: 4px;
     color: #363636;
 }
