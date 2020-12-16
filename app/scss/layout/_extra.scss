@@ -66,6 +66,27 @@
     }
 }
 
+.general-banner {
+    font-weight: normal;
+    font-size: 16px;
+    color: #656E71;
+    background: #ECFFF9;
+    padding: 15px;
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
+
+    & span {
+        font-size: 22px;
+        color: #034257;
+
+        @media (min-width: 992px) {
+            font-size: 24px;
+        }
+    }
+}
+
 .canvas-chart {
     max-width: 300px;
     max-height: 300px;

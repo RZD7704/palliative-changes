@@ -27,7 +27,9 @@
 						<div class="main-headline">
 							<p class="main-headline__subtiltle main-headline__subtiltle_theme_white text-left">НАПІВ</p>
 							<h1 class="main-headline__title">ПАЛІАТИВ</h1>
-							<h2 class="main-headline__subtext main-headline__subtext_theme_grey">Ця веб візуалізація створена на основі результатів дослідження надання паліативної допомоги в Полтаві 2018 року проведеного Інститутом аналітики та адвокації. З усіма результатами можна ознайомитися <a class="main-headline__subtext--link" href="https://iaa.org.ua/library/napiv-paliatyv-u-poltavi/">тут</a>
+							<p class="main-headline__subtiltle main-headline__subtiltle_theme_white text-right">У ПОЛТАВІ</p>
+							<h2 class="main-headline__subtext main-headline__subtext_theme_grey">Ця вебвізуалізація створена на основі результатів дослідження надання паліативної допомоги в Полтаві 2018 року проведеного Інститутом аналітики та адвокації.<br>
+							З усіма результатами можна ознайомитися <a class="main-headline__subtext--link" href="https://iaa.org.ua/library/napiv-paliatyv-u-poltavi/">тут.</a>
 							</h2>
 						</div>
 						<div class="main-banner__content">
@@ -62,11 +64,9 @@
 							<option value="2018">2018</option>
 						</select>
 					</div> -->
-					<p data-aos="fade-down-left" class="section-infrastructure__description pt-4 pb-0">Потреба у паліативній
-						допомозі має забезпечувати для 40% пацієнтів у стаціонарі та 60% мобільними службами. Згідно з
-						розрахунком та умовами закупівлі медичних послуг Національною Службою Здоровя України, у Полтаві
-						має бути щонайменше.
-					</p>
+					<div data-aos="fade-down-left" class="general-banner text-center mt-3">
+						<span>3 757</span> полтавців потребували паліативної допомоги
+					</div>
 					<div class="statistic">
 						<div data-aos="fade-up" class="statistic-сharts">
 							<div class="tabs-content">
@@ -172,32 +172,24 @@
 						<div data-aos="fade-down" class="statistic-сharts">
 							<div class="tabs-content">
 								<div class="2018 tabs act">
-									<h2 class="general-subtitle pb-3">Заголовок</h2>
 									<div data-aos="zoom-out-up" class="statistic-types">
 										<div class="statistic-types__wgt chart-wgt">
-											<div class="statistic-types__chart">
-												<div class="circle-chart-wrap">
-													<div class="chart-box">
-														<div class="chart-tooltip"></div>
-														<svg class="chart-smart chart-smart-js" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
-															<circle class="chart-smart__background tooltip-circle" stroke="#A4C9FF" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="top" title="Не отримали" data-i="1" data-title="Не отримали: 64%" />
-																<text x="50%" y="57%" text-anchor="middle" font-size="0.5em" fill="#363636">3757</text>
-															<circle class="chart-smart__circle tooltip-circle" stroke="#2147A4" stroke-width="2" stroke-dasharray="36,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" data-toggle="tooltip" data-placement="right" title="Отримали"  data-i="2" data-title="Отримали: 36%"/>
-														</svg>
-													</div>
-											</div>
+											<div class="statistic-types__chart position-relative">
+												<canvas class="canvas-chart" id="chartPleasureNeed" width="400"
+													height="400"></canvas>
+												<div class="statistic-types__chart-txt">3 757</div>
 											</div>
 											<div class="statistic-types__description">
 												<h4 class="statistic-types__title">Задоволення потреби
 												</h4>
-												<div id="customChartPoints"></div>
+												<div id="chartPleasureNeedPoints"></div>
 											</div>
 										</div>
 										<div class="statistic-types__wgt chart-wgt">
 											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartNeedsAll" width="400"
 													height="400"></canvas>
-												<div class="statistic-types__chart-txt">3757</div>
+												<div class="statistic-types__chart-txt">3 757</div>
 											</div>
 											<div class="statistic-types__description sec-2">
 												<h4 class="statistic-types__title">Потреба дітей і дорослих
@@ -210,7 +202,7 @@
 										<div class="statistic-types__wgt chart-wgt">
 											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartChildAll" width="50" height="50"></canvas>
-												<div class="statistic-types__chart-txt">1217</div>
+												<div class="statistic-types__chart-txt">1 217</div>
 											</div>
 											<div class="statistic-types__description">
 												<h4 class="statistic-types__title">Задоволення потреби дітей
@@ -240,7 +232,7 @@
 											<div class="statistic-types__chart position-relative">
 												<canvas class="canvas-chart" id="chartOldAll" width="400"
 													height="400"></canvas>
-												<div class="statistic-types__chart-txt">2540</div>
+												<div class="statistic-types__chart-txt">2 540</div>
 											</div>
 											<div class="statistic-types__description sec-2">
 												<h4 class="statistic-types__title">Задоволення потреби дорослих
@@ -292,17 +284,17 @@
 								</div>
 							</div> -->
 							<div class="statistic-description">
-								<h3 class="statistic-description__title">Потреби щодо застосування</h3>
+								<!-- <h3 class="statistic-description__title">Потреби щодо застосування</h3> -->
 								<p class="statistic-description__txt">Із 2011 року в Україні існує офіційна методика
 									розрахунку потреби в паліативній допомозі. Вона дуже загальна й не достатньо
 									коректна. Протягом останніх років паліативна спільнота активно говорить про її
 									недосконалість. Експерти з паліативної допомоги, медичної статистики, демографії,
 									Всесвітня організація охорони здоров’я і Міністерства охорони здоров’я України,
 									вивчили як найкраще використати рутинні дані (Держстату, Медстату, електронних
-									реєстрів пацієнтів) для більш достовірної оцінки потреби у паліативній допомозі в
+									реєстрів пацієнтів) для більш достовірної оцінки потреби <br> у паліативній допомозі  в
 									Україні.</p>
 								<p class="statistic-description__txt">Використавши статистичні дані 2018 року та
-									розроблено методологію, розрахували потребу в паліативній допомозі для міста
+									розроблено методологію, розрахували потребу<br> в паліативній допомозі для міста
 									Полтава.</p>
 							</div>
 						</div>
@@ -391,13 +383,13 @@
 					<div data-aos="zoom-out-up" class="statistic-types">
 						<div class="statistic-types__wgt chart-wgt">
 							<div class="statistic-types__chart">
-								<canvas class="canvas-chart" id="instСhartAll" width="50" height="50"></canvas>
+								<canvas class="canvas-chart" id="providersСhartAll" width="50" height="50"></canvas>
 							</div>
 							<div class="statistic-types__description">
 								<h4 class="statistic-types__title">Заклади надання допомоги
 									дітям
 								</h4>
-								<div id="instLegendsAll"></div>
+								<div id="providersLegendsAll"></div>
 								<!-- <div class="statistic-types__note">
 									<div
 										class="statistic-types__point statistic-types__point_theme_light-blue">
@@ -442,67 +434,12 @@
 							</div>
 						</div>
 					</div>
-					<h2 class="general-subtitle pt-4 pb-3">Надавання паліативної допомоги</h2>
-					<div data-aos="zoom-out-up" class="statistic-types">
-						<div class="statistic-types__wgt chart-wgt">
-							<div class="statistic-types__chart">
-								<canvas class="canvas-chart" id="providersСhartAll" width="50" height="50"></canvas>
-							</div>
-							<div class="statistic-types__description">
-								<h4 class="statistic-types__title">Заклади надання допомоги
-									дітям
-								</h4>
-								<div id="providersLegendsAll"></div>
-								<!-- <div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_light-blue">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №1</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_dark-blue">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №2</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_pink">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №3</div>
-								</div> -->
-							</div>
-						</div>
-						<div class="statistic-types__wgt chart-wgt">
-							<div class="statistic-types__chart">
-								<canvas class="canvas-chart" id="providersСhartNone" width="400"
-									height="400"></canvas>
-							</div>
-							<div class="statistic-types__description sec-2">
-								<h4 class="statistic-types__title">Рівні медичної допомоги
-								</h4>
-								<div id="providersLegendNone"></div>
-								<!-- <div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_light-blue">
-									</div>
-									<div class="statistic-types__subtitle">Первинний</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_dark-blue">
-									</div>
-									<div class="statistic-types__subtitle">Вторинний</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 			<section class="section-bar">
 				<div class="container">
 					<div class="general-head">
-						<h2 class="general-title">Заради гідності</h2>
+						<h2 class="general-title">Надана паліативна допомога у розрізі хвороб</h2>
 					</div>
 
 					<div class="tab-container">
@@ -534,7 +471,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -549,7 +486,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -564,7 +501,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -579,7 +516,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -594,7 +531,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -609,7 +546,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -624,7 +561,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -641,7 +578,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -656,7 +593,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -671,7 +608,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -686,7 +623,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -701,7 +638,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -716,7 +653,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -738,7 +675,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -753,7 +690,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -768,7 +705,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -783,7 +720,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -798,7 +735,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -813,7 +750,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -828,7 +765,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -845,7 +782,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -860,7 +797,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -875,7 +812,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -890,7 +827,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -905,7 +842,7 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
@@ -920,83 +857,12 @@
 												</div>
 												<div class="bar-wrapper__popup">
 													<div class="bar-wrapper__popup-txt">42</div>
-													<div class="bar-wrapper__popup-sub">дні</div>
+													<div class="bar-wrapper__popup-sub">хворих</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="general-info" class="section-care">
-				<div class="container">
-					<div class="section-care__wrapper">
-						<div data-aos="flip-right" class="section-care-description pt-3">
-							<p class="section-care-description__txt">Людство завжди піклувалось про вмираючих нужденних:
-								дати притулок, нагодувати, заспокоїти та підтримати. У 1981 році Всесвітня організація
-								охорони здоров’я прийняла Лісабонську декларацію – перелік прав пацієнта, серед яких
-								окремо виділили право на смерть із гідністю.</p>
-							<p class="section-care-description__txt">Галузь охорони здоров’я Полтави налічує 12 міських
-								лікувально-профілактичних закладів(ЛПЗ), серед яких немає спеціалізованих установ для
-								надання паліативної допомоги.</p>
-						</div>
-					</div>
-					<h2 class="general-subtitle pt-4 pb-3">Заглушка</h2>
-					<div data-aos="zoom-out-up" class="statistic-types">
-						<div class="statistic-types__wgt chart-wgt">
-							<div class="statistic-types__chart position-relative chart-max-height">
-								<canvas class="canvas-chart" id="providersСhartBuild" width="50" height="50"></canvas>
-								<div class="statistic-types__chart-txt">0/2</div>
-							</div>
-							<div class="statistic-types__description">
-								<h4 class="statistic-types__title">Стаціонарні паліативні заклади (відділення)
-								</h4>
-								<div id="providersLegendsBuild"></div>
-								<!-- <div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_light-blue">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №1</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_dark-blue">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №2</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_pink">
-									</div>
-									<div class="statistic-types__subtitle">ЦПСМД №3</div>
-								</div> -->
-							</div>
-						</div>
-						<div class="statistic-types__wgt chart-wgt">
-							<div class="statistic-types__chart position-relative chart-max-height">
-								<canvas class="canvas-chart" id="providersСhartBet" width="400"
-									height="400"></canvas>
-								<div class="statistic-types__chart-txt">10/24</div>
-							</div>
-							<div class="statistic-types__description sec-2">
-								<h4 class="statistic-types__title">Ліжка дорослим і дітям
-								</h4>
-								<div id="providersLegendBet"></div>
-								<!-- <div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_light-blue">
-									</div>
-									<div class="statistic-types__subtitle">Первинний</div>
-								</div>
-								<div class="statistic-types__note">
-									<div
-										class="statistic-types__point statistic-types__point_theme_dark-blue">
-									</div>
-									<div class="statistic-types__subtitle">Вторинний</div>
-								</div> -->
 							</div>
 						</div>
 					</div>
@@ -1005,59 +871,10 @@
 			<section id="total" class="section-total">
 				<div class="container">
 					<div class="general-head">
-						<h2 class="general-title">Насамкінець</h2>
+						<h2 class="general-title">Резюме</h2>
 					</div>
 					<div data-aos="zoom-out-down" class="hidden-block">
 						<div class="hidden-block__wrapper">
-							<!-- <div class="hidden-block__item">
-								<p class="hidden-block__txt">
-									Галузь охорони здоров’я Полтавщини вирізняться з-поміж інших областей України. Це
-									підтверджують чисельні інвестиційні ініціативи, які довели свою успішність,
-									ефективна приписна кампанія до сімейних лікарів і реалізація пілотного проекту за
-									новою моделлю фінансування закладів вторинного рівня. Але яка ситуація з паліативною
-									допомогою?
-								</p>
-							</div>
-							<div class="hidden-block__item">
-								<p class="hidden-block__txt">
-									О тепер в умовах стаціонару паліативні послуги надавали 8 медичних закладів:
-									обласні; міські кременчуцькі і лубенські; районні лохвицькі, кобеляцькі й
-									миргородські. У обласному центрі немає жодного госпісу чи паліативного відділення на
-									базу клінічної лікарні. Щоправда, у своїх листах – відповідях на запити, перша,
-									третя, четверта і дитяча міські лікарні, проінформували, що надавали паліативну
-									допомогу пацієнтам у 2018-2019 роках. Також у межах Полтави функціонують обласна
-									психіатрична лікарня та СНІД – центр, які надають паліативну допомогу мешканцям
-									області та міста зокрема.
-								</p>
-							</div>
-							<div class="hidden-block__item">
-								<p class="hidden-block__txt">
-									Цікаво, що у 2020 році одразу 17 закладів охорони здоров’я подали свої заявки до
-									Національної Служби Здоров’я України для надання стаціонарної паліативної допомоги в
-									області. Серед них 4 медичні заклади, які розміщуються в межах Полтави: обласні
-									клінічна психіатрична лікарня ім. О.Ф. Мальцева, центр профілактики та боротьби з
-									ВІЛ\СНІДом, клінічний госпіталь для ветеранів війни та міська дитяча клінічна
-									лікарня.
-								</p>
-							</div>
-							<div class="hidden-block__item">
-								<p class="hidden-block__txt">
-									Достатньо цього чи мало, має пояснити розрахунок потреби в паліативній допомозі.
-									Офіційний метод, на жаль, не враховує всіх показників. Експерти розробили власний
-									алгоритм, який включає більше інформації. Використавши його на основі даних 2018
-									року, встановили, що 3 757 жителів Полтави потребували паліативної допомоги: 1 217
-									дітей та 2 540 дорослих. Відносно повної потреби Полтавщини мешканці обласного
-									центру складають 1/3.
-								</p>
-							</div>
-							<div class="hidden-block__item">
-								<p class="hidden-block__txt">
-									На противагу розрахованій потребі, встановили, що 2018 року 1 333 полтавців отримали
-									паліативну допомогу в міських лікарнях. Відтак, можна припустити, що 64% пацієнтів
-									не отримали необхідних послуг. Ми також не знаємо чи якісними були паліативні
-									послуги для тих 36%, які формально їх отримали.
-								</p>
-							</div> -->
 							<div class="hidden-block__item">
 								<p class="hidden-block__txt">
 									З-поміж 12 лікувально-профілактичних закладів паліативну допомогу надавали в 6
@@ -1073,9 +890,7 @@
 									насправді паліативна допомога – значно ширше поняття. Враховуючи медичну реформу та
 									виокремлення Національною Службою Здоров’я України паліативної допомоги до двох
 									окремих груп послуг (стаціонарна та мобільна), уже помітна позитивна динаміка до
-									збільшення кількості лікувальних закладів – надавачів. Отже, 2020 рік може стати
-									переломним для задоволення потреби полтавців на більшому рівні, ніж 36% від
-									розрахункових оцінок.
+									збільшення кількості лікувальних закладів – надавачів. 
 								</p>
 							</div>
 						</div>

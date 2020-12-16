@@ -122,70 +122,70 @@ var swiperBar = new Swiper('.swiper-chart-all', {
     },
 });
 
-function addCustomChartPoints(elemParent, circleParent) {
-    const pointsParent = document.querySelector(elemParent);
+// function addCustomChartPoints(elemParent, circleParent) {
+//     const pointsParent = document.querySelector(elemParent);
 
-    let chartParent = document.querySelector(circleParent),
-        items = chartParent.querySelectorAll('circle'),
-        valueArr=[];
+//     let chartParent = document.querySelector(circleParent),
+//         items = chartParent.querySelectorAll('circle'),
+//         valueArr=[];
 
-    items.forEach(item => {
-        valueArr.push(item.getAttribute('title'));
+//     items.forEach(item => {
+//         valueArr.push(item.getAttribute('title'));
 
-    pointsParent.innerHTML =`
-    <div class="statistic-types__note chart-points-smart-js" data-i="2">
-        <div class="statistic-types__point statistic-types__point_theme_dark-blue"></div>
-        <div class="statistic-types__subtitle">${valueArr[1]}</div>
-    </div>
-    <div class="statistic-types__note chart-points-smart-js" data-i="1">
-        <div class="statistic-types__point statistic-types__point_theme_light-blue"></div>
-        <div class="statistic-types__subtitle">${valueArr[0]}</div>
-    </div>
-    `;
+//     pointsParent.innerHTML =`
+//     <div class="statistic-types__note chart-points-smart-js" data-i="2">
+//         <div class="statistic-types__point statistic-types__point_theme_dark-blue"></div>
+//         <div class="statistic-types__subtitle">${valueArr[1]}</div>
+//     </div>
+//     <div class="statistic-types__note chart-points-smart-js" data-i="1">
+//         <div class="statistic-types__point statistic-types__point_theme_light-blue"></div>
+//         <div class="statistic-types__subtitle">${valueArr[0]}</div>
+//     </div>
+//     `;
 
-        items.forEach(item => {
-            lightCustomChartPoint(item);
-        }); 
-    });
+//         items.forEach(item => {
+//             lightCustomChartPoint(item);
+//         }); 
+//     });
 
-    function lightCustomChartPoint(item) {
-        let circlePart = item,
-            points = document.querySelectorAll('.chart-points-smart-js');
+//     function lightCustomChartPoint(item) {
+//         let circlePart = item,
+//             points = document.querySelectorAll('.chart-points-smart-js');
 
-        item.addEventListener('mouseover', () => {
-            points.forEach(point => {
-                if (circlePart.getAttribute('data-i') == point.getAttribute('data-i')) {
-                    point.classList.add('active');
-                }
-            });
-        });
+//         item.addEventListener('mouseover', () => {
+//             points.forEach(point => {
+//                 if (circlePart.getAttribute('data-i') == point.getAttribute('data-i')) {
+//                     point.classList.add('active');
+//                 }
+//             });
+//         });
 
-        item.addEventListener('mouseout', () => {
-            points.forEach(point => {
-                if (circlePart.getAttribute('data-i') == point.getAttribute('data-i')) {
-                    point.classList.remove('active');
-                }
-            });
-        });
-    }
-}
-addCustomChartPoints('#customChartPoints', '.chart-smart-js');
+//         item.addEventListener('mouseout', () => {
+//             points.forEach(point => {
+//                 if (circlePart.getAttribute('data-i') == point.getAttribute('data-i')) {
+//                     point.classList.remove('active');
+//                 }
+//             });
+//         });
+//     }
+// }
+// addCustomChartPoints('#customChartPoints', '.chart-smart-js');
 
-function customChart() {
-    $('.tooltip-circle').mouseover(function(e){
-        var value = $(this).data('title');
-        $('body').append('<div class="tooltip-smart" style="left: ' + e.pageX + 'px; top: ' + e.pageY + 'px;">' + value + '</div>');
-    });
-    $('.tooltip-circle').mouseout(function(e){
-        if($('.tooltip-smart').length){
-            $('.tooltip-smart').remove();
-        }
-    });
-}
-customChart();
+// function customChart() {
+//     $('.tooltip-circle').mouseover(function(e){
+//         var value = $(this).data('title');
+//         $('body').append('<div class="tooltip-smart" style="left: ' + e.pageX + 'px; top: ' + e.pageY + 'px;">' + value + '</div>');
+//     });
+//     $('.tooltip-circle').mouseout(function(e){
+//         if($('.tooltip-smart').length){
+//             $('.tooltip-smart').remove();
+//         }
+//     });
+// }
+// customChart();
 
 
-function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, bulian, percentArg) {
+function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, percentArr, txtArr, numNone) {
     var ctx = document.querySelector(selector);
     var Сhart = new Chart(ctx, {
         type: 'doughnut',
@@ -213,6 +213,7 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, 
                     text.push('<li class="statistic-types__note"><div class="statistic-types__point" id="legend-' + i + '-item" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></div><span class="statistic-types__subtitle">');
                     if (chart.data.labels[i]) {
                         text.push(chart.data.labels[i]);
+                        text.push('(' + percentArr[i] + '%' + ')');
                     }
                     text.push('</span></li>');
                 }
@@ -237,20 +238,27 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, txt, 
                     return '';
                   },
                   afterLabel: function(tooltipItem, data) {
+                    let txtArrItem;
                     var name = data['labels'][tooltipItem['index']];
                     var dataset = data['datasets'][0];
                     var percent = data['datasets'][0]['data'][tooltipItem['index']];
                     lightPoint(selector, tooltipItem['index']);
-                     
-                    if(txt && bulian) {
-                        return name + ': ' + txt + '%';
-                    } else if(percentArg) {
-                        return name + ': ' + percent + '%';
-                    } else if(txt) {
-                        return txt + percent + '';
+                    if(numNone) {
+                        return name;
+                    } else if(txtArr) {
+                        txtArrItem = tooltipItem['index'];
+                        console.log(txtArrItem);
+                        return percent + ' ' + txtArr[txtArrItem];
                     } else {
                         return name + ': ' + percent;
                     }
+                     
+                    //  else if(percentArg) {
+                    //     return name + ': ' + percent + '%';
+                    // } else if(txt) {
+                    //     return txt + percent + '';
+                    // } else {
+                    // }
                   }
                 },
                 displayColors: false
@@ -272,18 +280,16 @@ function lightPoint(selector, index) {
     } $(elemHover).addClass('active');
 }
 
-// addBarChart('#slideChart1All', [6, 3, 6, 9, 3, 1, 2, 17, 5, 0, 8, 0, 7, 4, 2, 13, 2, 0, 2, 3, 1, 0, 1, 22], ['Ревматоїдний артрит - 240', 'Ревматоїдний артрит', 'Цукровий діабет - 259', 'Цукровий діабет', 'Туберкульоз - 107', 'Туберкульоз', 'ВІЛ/СНІД - 32', 'ВІЛ/СНІД', 'Хронічне обструктивне захворювання легень - 5', 'Хронічне обструктивне захворювання легень', 'Перинатальні стани -328', 'Перинатальні стани', 'Вродженні вади розвитку - 272', 'Вродженні вади розвитку', 'Розумова відсталість (важка і глибока) - 48', 'Розумова відсталість (важка і глибока)', 'Хронічні гепатити - 33', 'Хронічні гепатити', 'Запальні хвороби ЦНС - 30', 'Запальні хвороби ЦНС', 'Фенілкетонурія - 11', 'Фенілкетонурія', 'Муковісцидоз - 9', 'Муковісцидоз']);
+
+addDoughnutChart('#chartPleasureNeed', [1217, 2540], ['Отримали', 'Не отримали'], ['#A4C9FF', '#2147A4'],"#chartPleasureNeedPoints", [36, 64]);
+addDoughnutChart('#chartNeedsAll', [1217, 2540], ['Діти', 'Дорослі'], ['#A4C9FF', '#2147A4'],"#legendsNeedsAll", [32, 68], ['дітей', 'дорослих']);
+addDoughnutChart('#chartChildAll', [1151, 66], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsChildAll", [95, 5]);
+addDoughnutChart('#chartOldAll', [1273, 1267], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsOldAll", [50, 50]);
+
+addDoughnutChart('#providersСhartAll', [51, 15, 13, 10, 10, 1], ['ЦПМСД №2', '4 МКЛ', 'ЦПМСД №1', '2 МКЛ', 'ЦПМСД №3', '3 МКЛ'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)', 'rgba(221, 118, 118, 0.8)', 'rgba(255, 234, 146, 0.8)', 'rgba(12, 218, 232, 0.8)'],"#providersLegendsAll", [51, 15, 13, 10, 10, 1], [], true);
+addDoughnutChart('#levelСhartAll', [74, 26], ['Первинний', 'Вторинний'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)'],"#levelLegendAll", [74, 26], [], true);
 
 
-addDoughnutChart('#chartNeedsAll', [1217, 2540], ['Діти', 'Дорослі'], ['#A4C9FF', '#2147A4'],"#legendsNeedsAll", 'Потребують: ');
-addDoughnutChart('#chartChildAll', [1151, 66], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsChildAll");
-addDoughnutChart('#chartOldAll', [1273, 1267], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsOldAll");
 
-addDoughnutChart('#instСhartAll', [45, 38, 17], ['ЦПСМД №1', 'ЦПСМД №2', 'ЦПСМД №3'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)'],"#instLegendsAll");
-addDoughnutChart('#levelСhartAll', [74, 26], ['Первинний', 'Вторинний'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)'],"#levelLegendAll");
-
-addDoughnutChart('#providersСhartAll', [51, 15, 13, 10, 10, 1], ['ЦПСМД №2', '4 МКЛ', 'ЦПСМД №1', '2 МКЛ', 'ЦПСМД №3', '3 МКЛ'], ['rgba(164, 201, 255, 0.8)', 'rgba(55, 98, 204, 0.8)', 'rgba(249, 167, 167, 0.8)', 'rgba(221, 118, 118, 0.8)', 'rgba(255, 234, 146, 0.8)', 'rgba(12, 218, 232, 0.8)'],"#providersLegendsAll");
-addDoughnutChart('#providersСhartNone', [100], ['Не задоволено'], ['rgba(164, 201, 255, 0.8)'],"#providersLegendNone");
-
-addDoughnutChart('#providersСhartBuild', [100], ['Надано'], ['#A4EFFF'], "#providersLegendsBuild", '0', true);
-addDoughnutChart('#providersСhartBet', [42, 58], ['Надано','Не надано'], ['#A4EFFF', '#F9A7A7'],"#providersLegendBet", '', true, true);
+// addDoughnutChart('#providersСhartBuild', [100], ['Надано'], ['#A4EFFF'], "#providersLegendsBuild", '0', true);
+// addDoughnutChart('#providersСhartBet', [42, 58], ['Надано','Не надано'], ['#A4EFFF', '#F9A7A7'],"#providersLegendBet", '', true, true);
