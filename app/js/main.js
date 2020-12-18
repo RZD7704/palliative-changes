@@ -213,7 +213,7 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, perce
                     text.push('<li class="statistic-types__note"><div class="statistic-types__point" id="legend-' + i + '-item" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></div><span class="statistic-types__subtitle">');
                     if (chart.data.labels[i]) {
                         text.push(chart.data.labels[i]);
-                        text.push('(' + percentArr[i] + '%' + ')');
+                        text.push(' (' + percentArr[i] + '%' + ')');
                     }
                     text.push('</span></li>');
                 }
@@ -252,13 +252,6 @@ function addDoughnutChart(selector, dataArr, labelsArr, color, labelParen, perce
                     } else {
                         return name + ': ' + percent;
                     }
-                     
-                    //  else if(percentArg) {
-                    //     return name + ': ' + percent + '%';
-                    // } else if(txt) {
-                    //     return txt + percent + '';
-                    // } else {
-                    // }
                   }
                 },
                 displayColors: false
@@ -281,7 +274,7 @@ function lightPoint(selector, index) {
 }
 
 
-addDoughnutChart('#chartPleasureNeed', [1217, 2540], ['Отримали', 'Не отримали'], ['#A4C9FF', '#2147A4'],"#chartPleasureNeedPoints", [36, 64]);
+addDoughnutChart('#chartPleasureNeed', [1217, 2540], ['Отримали', 'Не отримали'], ['#A4EFFF', '#F9A7A7'],"#chartPleasureNeedPoints", [36, 64]);
 addDoughnutChart('#chartNeedsAll', [1217, 2540], ['Діти', 'Дорослі'], ['#A4C9FF', '#2147A4'],"#legendsNeedsAll", [32, 68], ['дітей', 'дорослих']);
 addDoughnutChart('#chartChildAll', [1151, 66], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsChildAll", [95, 5]);
 addDoughnutChart('#chartOldAll', [1273, 1267], ['Не отримали', 'Отримали'], ['#F9A7A7', '#A4EFFF'],"#legendsOldAll", [50, 50]);
