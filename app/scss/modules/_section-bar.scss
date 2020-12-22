@@ -46,8 +46,6 @@
     }
 }
 
-.bar-block__progress {}
-
 .bar-wrapper {
     position: relative;
     cursor: pointer;
@@ -84,4 +82,11 @@
         font-size: 12px;
         color: #000000;
     }
+}
+
+.progress-bar[aria-valuenow="0"] {
+    color: #fff;
+    min-width: 100%;
+    background: transparent;
+    box-shadow: none;
 }
